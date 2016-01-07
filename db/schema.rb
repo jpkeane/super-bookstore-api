@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160107192107) do
+ActiveRecord::Schema.define(version: 20160107192912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,4 +22,17 @@ ActiveRecord::Schema.define(version: 20160107192107) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "rentals", force: :cascade do |t|
+    t.string   "title",            null: false
+    t.string   "city",             null: false
+    t.integer  "property_type_id"
+    t.string   "image"
+    t.integer  "bedrooms",         null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "rentals", ["property_type_id"], name: "index_rentals_on_property_type_id", using: :btree
+
+  add_foreign_key "rentals", "property_types"
 end
