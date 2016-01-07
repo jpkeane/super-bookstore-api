@@ -11,3 +11,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore rspec examples txt
+/spec/examples.txt
+
+/.idea
