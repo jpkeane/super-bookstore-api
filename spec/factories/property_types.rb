@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :property_type do
-    name 'Fake Property'
+    name { Faker::Lorem.word }
   end
 end

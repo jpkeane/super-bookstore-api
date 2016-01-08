@@ -1,11 +1,9 @@
 FactoryGirl.define do
-  # TODO: Faker
   factory :rental do
     title 'New rental'
-    city 'Birmingham'
+    city { Faker::Address.city }
     property_type
-    image nil
-    bedrooms 1
+    image { "#{Faker::Internet.url('example.com')}.jpg" }
+    bedrooms { rand(1..5) }
   end
-
 end
