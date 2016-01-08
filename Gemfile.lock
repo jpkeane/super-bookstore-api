@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.4.0)
     arel (6.0.3)
     bcrypt (3.1.10)
     builder (3.2.2)
@@ -131,6 +132,9 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    validate_url (1.0.2)
+      activemodel (>= 3.0.0)
+      addressable
 
 PLATFORMS
   ruby
@@ -147,6 +151,7 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   unicorn
+  validate_url
 
 BUNDLED WITH
    1.11.2

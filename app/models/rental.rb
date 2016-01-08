@@ -4,5 +4,5 @@ class Rental < ActiveRecord::Base
   validates :title, presence: true
   validates :city, presence: true
   validates :bedrooms, presence: true, numericality: { greater_than: 0 }
-
+  validates :image, url: { allow_nil: true, allow_blank: true}
 end
