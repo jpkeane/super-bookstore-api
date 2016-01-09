@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109173704) do
+ActiveRecord::Schema.define(version: 20160109193733) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20160109173704) do
     t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "rental_states", force: :cascade do |t|
+    t.string   "name",           null: false
+    t.string   "display_colour"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "rentals", force: :cascade do |t|
@@ -32,9 +39,12 @@ ActiveRecord::Schema.define(version: 20160109173704) do
     t.datetime "updated_at",          null: false
     t.float    "daily_rent",          null: false
     t.integer  "rent_payment_period", null: false
+    t.integer  "rental_state_id",     null: false
   end
 
   add_index "rentals", ["property_type_id"], name: "index_rentals_on_property_type_id", using: :btree
+  add_index "rentals", ["rental_state_id"], name: "index_rentals_on_rental_state_id", using: :btree
 
   add_foreign_key "rentals", "property_types"
+  add_foreign_key "rentals", "rental_states"
 end

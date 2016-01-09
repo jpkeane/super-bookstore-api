@@ -4,4 +4,10 @@ namespace :seed do
       PropertyType.find_or_create_by!(attr)
     end
   end
+
+  task :rental_states => :environment do
+    YAML.load_file(Rails.root.join('db', 'seeds', 'rental_states.yml')).each do |attr|
+      RentalState.find_or_create_by!(attr)
+    end
+  end
 end

@@ -1,0 +1,4 @@
+- name: To let
+  display_colour: #008000
+- name: Let
+  display_colour: #e00000

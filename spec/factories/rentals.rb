@@ -7,5 +7,6 @@ FactoryGirl.define do
     bedrooms { rand(1..5) }
     daily_rent { rand(400..800) }
     rent_payment_period 0
+    rental_state
   end
 end

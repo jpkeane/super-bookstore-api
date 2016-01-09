@@ -10,6 +10,7 @@ RSpec.describe Rental, type: :model do
 
   describe 'relationships' do
     it { is_expected.to belong_to :property_type }
+    it { is_expected.to belong_to :rental_state }
   end
 
   describe 'validations' do
