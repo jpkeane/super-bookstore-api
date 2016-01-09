@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109193733) do
+ActiveRecord::Schema.define(version: 20160109204450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "landlords", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "address",    null: false
+    t.string   "telephone",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "property_types", force: :cascade do |t|
     t.string   "name",       null: false
@@ -40,11 +48,14 @@ ActiveRecord::Schema.define(version: 20160109193733) do
     t.float    "daily_rent",          null: false
     t.integer  "rent_payment_period", null: false
     t.integer  "rental_state_id",     null: false
+    t.integer  "landlord_id",         null: false
   end
 
+  add_index "rentals", ["landlord_id"], name: "index_rentals_on_landlord_id", using: :btree
   add_index "rentals", ["property_type_id"], name: "index_rentals_on_property_type_id", using: :btree
   add_index "rentals", ["rental_state_id"], name: "index_rentals_on_rental_state_id", using: :btree
 
+  add_foreign_key "rentals", "landlords"
   add_foreign_key "rentals", "property_types"
   add_foreign_key "rentals", "rental_states"
 end

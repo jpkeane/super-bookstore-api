@@ -1,6 +1,7 @@
 class Rental < ActiveRecord::Base
   belongs_to :property_type
   belongs_to :rental_state
+  belongs_to :landlord
 
   enum rent_payment_period: [ :pcm, :weekly, :quadweekly, :daily ]
 
