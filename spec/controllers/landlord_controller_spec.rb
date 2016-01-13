@@ -1,5 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe LandlordController, type: :controller do
+module V1
+  RSpec.describe LandlordsController, type: :controller do
 
+  end
 end
+

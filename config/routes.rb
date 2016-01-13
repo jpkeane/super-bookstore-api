@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  jsonapi_resources :landlords
+  namespace 'v1' do
+    jsonapi_resources :landlords
+  end
 end

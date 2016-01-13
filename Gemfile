@@ -10,6 +10,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
 
 gem 'jsonapi-resources'
+gem 'apitome'
 
 group :development do
   gem 'spring'
@@ -21,6 +22,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'rspec_api_documentation'
 end
 
 group :test do
