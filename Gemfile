@@ -7,8 +7,6 @@ gem 'validate_url'
 
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'unicorn'
-
 gem 'jsonapi-resources'
 gem 'apitome'
 
@@ -27,4 +25,9 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 3.0'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'puma'
 end
