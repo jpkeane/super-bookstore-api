@@ -1,5 +1,5 @@
-Super Bookstore API Documentation
-=================================
+Super Rentals API Documentation
+===============================
 
 The following documentation describes the JSONAPI compliant API for the SuperRentals sample application for API first 
 applications.
