@@ -44,6 +44,24 @@
       "required": true,
       "name": "rent-payment-period",
       "description": "      How often the rent has to be paid.\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "property-type",
+      "description": "      The type of property for rent.\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "landlord",
+      "description": "      The landlord of the property.\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "rental-state",
+      "description": "      The state of the rental.\n"
     }
   ],
   "response_fields": [
@@ -52,7 +70,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rentals/194?type=rentals",
+      "request_path": "/v1/rentals/320?type=rentals",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -63,7 +81,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"194\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/194\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Bergnaumland\",\"bedrooms\":2,\"image\":\"http://example.com/desiree_blick.jpg\",\"daily-rent\":609.0,\"rent-payment-period\":\"pcm\"}}}",
+      "response_body": "{\"data\":{\"id\":\"320\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/320\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"North Dianna\",\"bedrooms\":2,\"image\":\"http://example.com/annabelle_koelpin.jpg\",\"daily-rent\":537.0,\"rent-payment-period\":\"pcm\"},\"relationships\":{\"rental-state\":{\"links\":{\"self\":\"http://example.org/v1/rentals/320/relationships/rental-state\",\"related\":\"http://example.org/v1/rentals/320/rental-state\"}},\"property-type\":{\"links\":{\"self\":\"http://example.org/v1/rentals/320/relationships/property-type\",\"related\":\"http://example.org/v1/rentals/320/property-type\"}},\"landlord\":{\"links\":{\"self\":\"http://example.org/v1/rentals/320/relationships/landlord\",\"related\":\"http://example.org/v1/rentals/320/landlord\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

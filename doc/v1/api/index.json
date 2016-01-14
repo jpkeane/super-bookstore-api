@@ -1,39 +1,58 @@
 {
   "resources": [
     {
-      "name": "Landlords",
-      "examples": [
-        {
-          "description": "GET /v1/landlords/:id",
-          "link": "landlords/get_v1landlords:id.json",
-          "groups": "all",
-          "route": "/v1/landlords/:id",
-          "method": "get"
-        },
-        {
-          "description": "GET /v1/landlords",
-          "link": "landlords/get_v1landlords.json",
-          "groups": "all",
-          "route": "/v1/landlords",
-          "method": "get"
-        }
-      ]
-    },
-    {
       "name": "Rental States",
       "examples": [
+        {
+          "description": "GET /v1/rental-states/:id",
+          "link": "rental_states/get_v1rental-states:id.json",
+          "groups": "all",
+          "route": "/v1/rental-states/:id",
+          "method": "get"
+        },
         {
           "description": "GET /v1/rental-states",
           "link": "rental_states/get_v1rental-states.json",
           "groups": "all",
           "route": "/v1/rental-states",
           "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Landlords",
+      "examples": [
+        {
+          "description": "GET /v1/landlords",
+          "link": "landlords/get_v1landlords.json",
+          "groups": "all",
+          "route": "/v1/landlords",
+          "method": "get"
         },
         {
-          "description": "GET /v1/rental-states/:id",
-          "link": "rental_states/get_v1rental-states:id.json",
+          "description": "GET /v1/landlords/:id",
+          "link": "landlords/get_v1landlords:id.json",
           "groups": "all",
-          "route": "/v1/rental-states/:id",
+          "route": "/v1/landlords/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Property Types",
+      "examples": [
+        {
+          "description": "GET /v1/property-types",
+          "link": "property_types/get_v1property-types.json",
+          "groups": "all",
+          "route": "/v1/property-types",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/property-types/:id",
+          "link": "property_types/get_v1property-types:id.json",
+          "groups": "all",
+          "route": "/v1/property-types/:id",
           "method": "get"
         }
       ]
@@ -53,25 +72,6 @@
           "link": "rentals/get_v1rentals.json",
           "groups": "all",
           "route": "/v1/rentals",
-          "method": "get"
-        }
-      ]
-    },
-    {
-      "name": "Property Types",
-      "examples": [
-        {
-          "description": "GET /v1/property-types/:id",
-          "link": "property_types/get_v1property-types:id.json",
-          "groups": "all",
-          "route": "/v1/property-types/:id",
-          "method": "get"
-        },
-        {
-          "description": "GET /v1/property-types",
-          "link": "property_types/get_v1property-types.json",
-          "groups": "all",
-          "route": "/v1/property-types",
           "method": "get"
         }
       ]

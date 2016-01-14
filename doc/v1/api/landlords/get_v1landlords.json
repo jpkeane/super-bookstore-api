@@ -46,7 +46,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"278\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/278\"},\"attributes\":{\"name\":\"Tillman, Botsford and Hills\",\"address\":\"9388 Annalise Garden\",\"telephone\":\"(459) 096-3198 x7128\"}},{\"id\":\"279\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/279\"},\"attributes\":{\"name\":\"Kiehn, Braun and Russel\",\"address\":\"924 Scotty Estates\",\"telephone\":\"925.969.5106 x766\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"439\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/439\"},\"attributes\":{\"name\":\"Lowe, Reichel and Schowalter\",\"address\":\"8088 Hardy Keys\",\"telephone\":\"397-249-0839 x361\"}},{\"id\":\"440\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/440\"},\"attributes\":{\"name\":\"Mueller, D'Amore and Sipes\",\"address\":\"37954 Camron Well\",\"telephone\":\"718-054-5708 x8615\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

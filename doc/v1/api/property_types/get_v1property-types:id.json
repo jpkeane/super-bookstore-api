@@ -23,7 +23,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/property-types/293?type=property-types",
+      "request_path": "/v1/property-types/466?type=property-types",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -34,7 +34,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"293\",\"type\":\"property-types\",\"links\":{\"self\":\"http://example.org/v1/property-types/293\"},\"attributes\":{\"name\":\"Type 4\"}}}",
+      "response_body": "{\"data\":{\"id\":\"466\",\"type\":\"property-types\",\"links\":{\"self\":\"http://example.org/v1/property-types/466\"},\"attributes\":{\"name\":\"Type 3\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

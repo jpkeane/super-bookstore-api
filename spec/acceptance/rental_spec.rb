@@ -28,6 +28,15 @@ RSpec.resource 'Rentals' do
     parameter 'rent-payment-period', <<-DESC, scope: :attributes, required: true
       How often the rent has to be paid.
     DESC
+    parameter 'property-type', <<-DESC, scope: :relationships, required: true
+      The type of property for rent.
+    DESC
+    parameter 'landlord', <<-DESC, scope: :relationships, required: true
+      The landlord of the property.
+    DESC
+    parameter 'rental-state', <<-DESC, scope: :relationships, required: true
+      The state of the rental.
+    DESC
   end
 
   get '/v1/rentals' do

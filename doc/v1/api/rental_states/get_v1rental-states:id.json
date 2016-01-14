@@ -29,7 +29,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rental-states/273?type=rental-states",
+      "request_path": "/v1/rental-states/439?type=rental-states",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -40,7 +40,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"273\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/273\"},\"attributes\":{\"name\":\"State 3\",\"display-colour\":\"#e00000\"}}}",
+      "response_body": "{\"data\":{\"id\":\"439\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/439\"},\"attributes\":{\"name\":\"State 1\",\"display-colour\":\"#e00000\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

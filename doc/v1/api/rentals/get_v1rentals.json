@@ -44,6 +44,24 @@
       "required": true,
       "name": "rent-payment-period",
       "description": "      How often the rent has to be paid.\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "property-type",
+      "description": "      The type of property for rent.\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "landlord",
+      "description": "      The landlord of the property.\n"
+    },
+    {
+      "scope": "relationships",
+      "required": true,
+      "name": "rental-state",
+      "description": "      The state of the rental.\n"
     }
   ],
   "response_fields": [
@@ -63,7 +81,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"195\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/195\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Bradtkefurt\",\"bedrooms\":3,\"image\":\"http://example.com/odell.jpg\",\"daily-rent\":702.0,\"rent-payment-period\":\"pcm\"}},{\"id\":\"196\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/196\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"West Sallytown\",\"bedrooms\":1,\"image\":\"http://example.com/dee.wintheiser.jpg\",\"daily-rent\":659.0,\"rent-payment-period\":\"pcm\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"321\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/321\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Lake Gay\",\"bedrooms\":3,\"image\":\"http://example.com/dock_renner.jpg\",\"daily-rent\":723.0,\"rent-payment-period\":\"pcm\"},\"relationships\":{\"rental-state\":{\"links\":{\"self\":\"http://example.org/v1/rentals/321/relationships/rental-state\",\"related\":\"http://example.org/v1/rentals/321/rental-state\"}},\"property-type\":{\"links\":{\"self\":\"http://example.org/v1/rentals/321/relationships/property-type\",\"related\":\"http://example.org/v1/rentals/321/property-type\"}},\"landlord\":{\"links\":{\"self\":\"http://example.org/v1/rentals/321/relationships/landlord\",\"related\":\"http://example.org/v1/rentals/321/landlord\"}}}},{\"id\":\"322\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/322\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Vandervortchester\",\"bedrooms\":1,\"image\":\"http://example.com/hermann_kuphal.jpg\",\"daily-rent\":507.0,\"rent-payment-period\":\"pcm\"},\"relationships\":{\"rental-state\":{\"links\":{\"self\":\"http://example.org/v1/rentals/322/relationships/rental-state\",\"related\":\"http://example.org/v1/rentals/322/rental-state\"}},\"property-type\":{\"links\":{\"self\":\"http://example.org/v1/rentals/322/relationships/property-type\",\"related\":\"http://example.org/v1/rentals/322/property-type\"}},\"landlord\":{\"links\":{\"self\":\"http://example.org/v1/rentals/322/relationships/landlord\",\"related\":\"http://example.org/v1/rentals/322/landlord\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
