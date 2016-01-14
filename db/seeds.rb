@@ -19,9 +19,51 @@ image2 = 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highris
 image3 = 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
 
 dr800pcm = 26.301369863
+dr210pw = 30
+dr1800pcm = 59.178082192
+dr1600pcm = 46.02739726
 
-# TODO: 15 To Lets, mix per landlord and type
 re1 = Rental.create(title: 'New build flat, ideal for sharing',
+                    city: 'London',
+                    bedrooms: 3,
+                    image: image1,
+                    daily_rent: dr800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt4,
+                    rental_state: rs2,
+                    landlord: ll1)
+
+re2 = Rental.create(title: 'Studio flat, newly furnished',
+                    city: 'London',
+                    bedrooms: 1,
+                    image: image2,
+                    daily_rent: dr210pw,
+                    rent_payment_period: :weekly,
+                    property_type: pt3,
+                    rental_state: rs1,
+                    landlord: ll1)
+
+re3 = Rental.create(title: 'Family House',
+                    city: 'London',
+                    bedrooms: 4,
+                    image: image3,
+                    daily_rent: dr1800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs1,
+                    landlord: ll1)
+
+re4 = Rental.create(title: 'Family 3-bed House',
+                    city: 'London',
+                    bedrooms: 3,
+                    image: image3,
+                    daily_rent: dr1600pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs1,
+                    landlord: ll1)
+
+re5 = Rental.create(title: 'New build flat, ideal for sharing',
                     city: 'London',
                     bedrooms: 3,
                     image: image1,
@@ -29,8 +71,154 @@ re1 = Rental.create(title: 'New build flat, ideal for sharing',
                     rent_payment_period: :pcm,
                     property_type: pt2,
                     rental_state: rs1,
+                    landlord: ll2)
+
+re6 = Rental.create(title: 'Studio flat, newly furnished',
+                    city: 'London',
+                    bedrooms: 1,
+                    image: image2,
+                    daily_rent: dr210pw,
+                    rent_payment_period: :weekly,
+                    property_type: pt3,
+                    rental_state: rs1,
+                    landlord: ll2)
+
+re7 = Rental.create(title: 'Family House',
+                    city: 'London',
+                    bedrooms: 4,
+                    image: image3,
+                    daily_rent: dr1800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs1,
+                    landlord: ll2)
+
+re8 = Rental.create(title: 'Family 3-bed House',
+                    city: 'London',
+                    bedrooms: 3,
+                    image: image3,
+                    daily_rent: dr1600pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs1,
+                    landlord: ll2)
+
+re9= Rental.create(title: 'New build flat, ideal for sharing',
+                    city: 'London',
+                    bedrooms: 3,
+                    image: image1,
+                    daily_rent: dr800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt2,
+                    rental_state: rs1,
+                    landlord: ll3)
+
+re10 = Rental.create(title: 'Studio flat, newly furnished',
+                    city: 'London',
+                    bedrooms: 1,
+                    image: image2,
+                    daily_rent: dr210pw,
+                    rent_payment_period: :weekly,
+                    property_type: pt3,
+                    rental_state: rs1,
+                    landlord: ll3)
+
+re11 = Rental.create(title: 'Family House',
+                    city: 'London',
+                    bedrooms: 4,
+                    image: image3,
+                    daily_rent: dr1800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs1,
+                    landlord: ll3)
+
+re12 = Rental.create(title: 'Family 3-bed House',
+                    city: 'London',
+                    bedrooms: 3,
+                    image: image3,
+                    daily_rent: dr1600pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs1,
+                    landlord: ll3)
+
+re13 = Rental.create(title: 'Studio flat, newly furnished',
+                     city: 'London',
+                     bedrooms: 1,
+                     image: image2,
+                     daily_rent: dr210pw,
+                     rent_payment_period: :weekly,
+                     property_type: pt3,
+                     rental_state: rs1,
+                     landlord: ll4)
+
+re14 = Rental.create(title: 'Family House',
+                     city: 'London',
+                     bedrooms: 4,
+                     image: image3,
+                     daily_rent: dr1800pcm,
+                     rent_payment_period: :pcm,
+                     property_type: pt1,
+                     rental_state: rs1,
+                     landlord: ll4)
+
+re15 = Rental.create(title: 'Family 3-bed House',
+                     city: 'London',
+                     bedrooms: 3,
+                     image: image3,
+                     daily_rent: dr1600pcm,
+                     rent_payment_period: :pcm,
+                     property_type: pt1,
+                     rental_state: rs1,
+                     landlord: ll4)
+
+re16 = Rental.create(title: 'New build flat, ideal for sharing',
+                    city: 'London',
+                    bedrooms: 3,
+                    image: image1,
+                    daily_rent: dr800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt2,
+                    rental_state: rs2,
                     landlord: ll1)
 
-# TODO: 5 Let, 3 in one LL, 2 in others
+re17 = Rental.create(title: 'Studio flat, newly furnished',
+                    city: 'London',
+                    bedrooms: 1,
+                    image: image2,
+                    daily_rent: dr210pw,
+                    rent_payment_period: :weekly,
+                    property_type: pt3,
+                    rental_state: rs2,
+                    landlord: ll1)
 
+re18 = Rental.create(title: 'Family House',
+                    city: 'London',
+                    bedrooms: 4,
+                    image: image3,
+                    daily_rent: dr1800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs2,
+                    landlord: ll1)
 
+re19 = Rental.create(title: 'Family House',
+                    city: 'London',
+                    bedrooms: 4,
+                    image: image3,
+                    daily_rent: dr1800pcm,
+                    rent_payment_period: :pcm,
+                    property_type: pt1,
+                    rental_state: rs2,
+                    landlord: ll2)
+
+re20 = Rental.create(title: 'Studio flat, newly furnished',
+                     city: 'London',
+                     bedrooms: 1,
+                     image: image2,
+                     daily_rent: dr210pw,
+                     rent_payment_period: :weekly,
+                     property_type: pt3,
+                     rental_state: rs2,
+                     landlord: ll4)
