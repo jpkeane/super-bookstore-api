@@ -19,7 +19,7 @@ RSpec.resource 'Rentals' do
     parameter 'bedrooms', <<-DESC, scope: :attributes, required: true
       The amount of bedrooms the rental has.
     DESC
-    parameter 'image', <<-DESC, scope: :attributes, required: true
+    parameter 'image', <<-DESC, scope: :attributes
       The image URL for the rental.
     DESC
     parameter 'daily-rent', <<-DESC, scope: :attributes, required: true

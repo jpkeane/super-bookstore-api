@@ -30,7 +30,6 @@
     },
     {
       "scope": "attributes",
-      "required": true,
       "name": "image",
       "description": "      The image URL for the rental.\n"
     },
@@ -53,7 +52,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rentals/191?type=rentals",
+      "request_path": "/v1/rentals/194?type=rentals",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -64,7 +63,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"191\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/191\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Port Madalynside\",\"bedrooms\":1,\"image\":\"http://example.com/godfrey.prohaska.jpg\",\"daily-rent\":643.0,\"rent-payment-period\":\"pcm\"}}}",
+      "response_body": "{\"data\":{\"id\":\"194\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/194\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Bergnaumland\",\"bedrooms\":2,\"image\":\"http://example.com/desiree_blick.jpg\",\"daily-rent\":609.0,\"rent-payment-period\":\"pcm\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

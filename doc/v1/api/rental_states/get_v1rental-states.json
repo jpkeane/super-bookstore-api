@@ -40,7 +40,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"268\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/268\"},\"attributes\":{\"name\":\"State 4\",\"display-colour\":\"#e00000\"}},{\"id\":\"269\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/269\"},\"attributes\":{\"name\":\"State 5\",\"display-colour\":\"#e00000\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"271\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/271\"},\"attributes\":{\"name\":\"State 1\",\"display-colour\":\"#e00000\"}},{\"id\":\"272\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/272\"},\"attributes\":{\"name\":\"State 2\",\"display-colour\":\"#e00000\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

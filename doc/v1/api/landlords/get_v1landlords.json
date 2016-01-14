@@ -46,7 +46,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"272\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/272\"},\"attributes\":{\"name\":\"Metz, Roberts and Walker\",\"address\":\"28572 Pinkie Road\",\"telephone\":\"1-727-514-6674\"}},{\"id\":\"273\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/273\"},\"attributes\":{\"name\":\"Monahan, Smitham and Kozey\",\"address\":\"1092 Makenzie Coves\",\"telephone\":\"635-688-6516 x645\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"278\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/278\"},\"attributes\":{\"name\":\"Tillman, Botsford and Hills\",\"address\":\"9388 Annalise Garden\",\"telephone\":\"(459) 096-3198 x7128\"}},{\"id\":\"279\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/279\"},\"attributes\":{\"name\":\"Kiehn, Braun and Russel\",\"address\":\"924 Scotty Estates\",\"telephone\":\"925.969.5106 x766\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

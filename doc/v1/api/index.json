@@ -20,25 +20,6 @@
       ]
     },
     {
-      "name": "Rentals",
-      "examples": [
-        {
-          "description": "GET /v1/rentals/:id",
-          "link": "rentals/get_v1rentals:id.json",
-          "groups": "all",
-          "route": "/v1/rentals/:id",
-          "method": "get"
-        },
-        {
-          "description": "GET /v1/rentals",
-          "link": "rentals/get_v1rentals.json",
-          "groups": "all",
-          "route": "/v1/rentals",
-          "method": "get"
-        }
-      ]
-    },
-    {
       "name": "Rental States",
       "examples": [
         {
@@ -53,6 +34,25 @@
           "link": "rental_states/get_v1rental-states:id.json",
           "groups": "all",
           "route": "/v1/rental-states/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Rentals",
+      "examples": [
+        {
+          "description": "GET /v1/rentals/:id",
+          "link": "rentals/get_v1rentals:id.json",
+          "groups": "all",
+          "route": "/v1/rentals/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/rentals",
+          "link": "rentals/get_v1rentals.json",
+          "groups": "all",
+          "route": "/v1/rentals",
           "method": "get"
         }
       ]
