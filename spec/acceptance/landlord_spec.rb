@@ -22,6 +22,8 @@ RSpec.resource 'Landlords' do
   end
 
   get '/v1/landlords' do
+    include_context 'landlord parameters'
+
     before do
       2.times do
         FactoryGirl.create(:landlord)
@@ -35,6 +37,8 @@ RSpec.resource 'Landlords' do
   end
 
   get '/v1/landlords/:id' do
+    include_context 'landlord parameters'
+
     let! :persisted_landlord do
       FactoryGirl.create(:landlord)
     end

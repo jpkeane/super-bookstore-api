@@ -1,25 +1,6 @@
 {
   "resources": [
     {
-      "name": "Property-Types",
-      "examples": [
-        {
-          "description": "GET /v1/property-types/:id",
-          "link": "property-types/get_v1property-types:id.json",
-          "groups": "all",
-          "route": "/v1/property-types/:id",
-          "method": "get"
-        },
-        {
-          "description": "GET /v1/property-types",
-          "link": "property-types/get_v1property-types.json",
-          "groups": "all",
-          "route": "/v1/property-types",
-          "method": "get"
-        }
-      ]
-    },
-    {
       "name": "Landlords",
       "examples": [
         {
@@ -53,6 +34,25 @@
           "link": "rental_states/get_v1rental-states:id.json",
           "groups": "all",
           "route": "/v1/rental-states/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Property Types",
+      "examples": [
+        {
+          "description": "GET /v1/property-types",
+          "link": "property_types/get_v1property-types.json",
+          "groups": "all",
+          "route": "/v1/property-types",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/property-types/:id",
+          "link": "property_types/get_v1property-types:id.json",
+          "groups": "all",
+          "route": "/v1/property-types/:id",
           "method": "get"
         }
       ]

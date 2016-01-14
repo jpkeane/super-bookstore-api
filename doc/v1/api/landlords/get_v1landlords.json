@@ -5,7 +5,29 @@
   "description": "GET /v1/landlords",
   "explanation": null,
   "parameters": [
-
+    {
+      "required": true,
+      "name": "type",
+      "description": "      The type of the resource. Must be landlords.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "name",
+      "description": "      The name of the landlord.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "address",
+      "description": "      The address of the landlord.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "telephones",
+      "description": "      The telephone of the landlord.\n"
+    }
   ],
   "response_fields": [
 
@@ -13,17 +35,18 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/landlords",
+      "request_path": "/v1/landlords?type=landlords",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
+        "type": "landlords"
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"219\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/219\"},\"attributes\":{\"name\":\"Wuckert Inc\",\"address\":\"76915 Murphy Isle\",\"telephone\":\"1-894-472-6206\"}},{\"id\":\"220\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/220\"},\"attributes\":{\"name\":\"Volkman LLC\",\"address\":\"412 Hills Valleys\",\"telephone\":\"237.976.1984 x0374\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"228\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/228\"},\"attributes\":{\"name\":\"Wisozk-Grant\",\"address\":\"4107 Friesen Expressway\",\"telephone\":\"101.952.4970 x87668\"}},{\"id\":\"229\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/229\"},\"attributes\":{\"name\":\"Smith Group\",\"address\":\"798 Erich Fork\",\"telephone\":\"594-901-4213 x2063\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

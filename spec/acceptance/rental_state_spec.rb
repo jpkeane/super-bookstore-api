@@ -19,6 +19,8 @@ RSpec.resource 'Rental States' do
   end
 
   get '/v1/rental-states' do
+    include_context 'rental-states parameters'
+
     before do
       2.times do
         FactoryGirl.create(:rental_state)
@@ -32,6 +34,8 @@ RSpec.resource 'Rental States' do
   end
 
   get '/v1/rental-states/:id' do
+    include_context 'rental-states parameters'
+
     let! :persisted_rental_state do
       FactoryGirl.create(:rental_state)
     end

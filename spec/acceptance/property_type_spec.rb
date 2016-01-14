@@ -16,6 +16,8 @@ RSpec.resource 'Property Types' do
   end
 
   get '/v1/property-types' do
+    include_context 'property-type parameters'
+
     before do
       2.times do
         FactoryGirl.create(:property_type)
@@ -29,6 +31,8 @@ RSpec.resource 'Property Types' do
   end
 
   get '/v1/property-types/:id' do
+    include_context 'property-type parameters'
+
     let! :persisted_property_type do
       FactoryGirl.create(:property_type)
     end

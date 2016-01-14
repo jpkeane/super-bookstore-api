@@ -1,11 +1,21 @@
 {
-  "resource": "Property-Types",
+  "resource": "Property Types",
   "http_method": "GET",
   "route": "/v1/property-types/:id",
   "description": "GET /v1/property-types/:id",
   "explanation": null,
   "parameters": [
-
+    {
+      "required": true,
+      "name": "type",
+      "description": "      The type of the resource. Must be landlords.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "name",
+      "description": "      The name of the property-type.\n"
+    }
   ],
   "response_fields": [
 
@@ -13,17 +23,18 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/property-types/230",
+      "request_path": "/v1/property-types/241?type=property-types",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
+        "type": "property-types"
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"230\",\"type\":\"property-types\",\"links\":{\"self\":\"http://example.org/v1/property-types/230\"},\"attributes\":{\"name\":\"Type 1\"}}}",
+      "response_body": "{\"data\":{\"id\":\"241\",\"type\":\"property-types\",\"links\":{\"self\":\"http://example.org/v1/property-types/241\"},\"attributes\":{\"name\":\"Type 3\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

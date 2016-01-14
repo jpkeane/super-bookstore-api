@@ -5,7 +5,23 @@
   "description": "GET /v1/rental-states",
   "explanation": null,
   "parameters": [
-
+    {
+      "required": true,
+      "name": "type",
+      "description": "      The type of the resource. Must be rental-states.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "name",
+      "description": "      The name of the rental-state.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "display-colour",
+      "description": "      The html display colour that will be used when displaying this state.\n"
+    }
   ],
   "response_fields": [
 
@@ -13,17 +29,18 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rental-states",
+      "request_path": "/v1/rental-states?type=rental-states",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
+        "type": "rental-states"
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"212\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/212\"},\"attributes\":{\"name\":\"State 1\",\"display-colour\":\"#e00000\"}},{\"id\":\"213\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/213\"},\"attributes\":{\"name\":\"State 2\",\"display-colour\":\"#e00000\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"221\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/221\"},\"attributes\":{\"name\":\"State 1\",\"display-colour\":\"#e00000\"}},{\"id\":\"222\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/222\"},\"attributes\":{\"name\":\"State 2\",\"display-colour\":\"#e00000\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rental-states?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

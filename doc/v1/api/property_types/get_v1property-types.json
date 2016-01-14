@@ -1,8 +1,8 @@
 {
-  "resource": "Landlords",
+  "resource": "Property Types",
   "http_method": "GET",
-  "route": "/v1/landlords/:id",
-  "description": "GET /v1/landlords/:id",
+  "route": "/v1/property-types",
+  "description": "GET /v1/property-types",
   "explanation": null,
   "parameters": [
     {
@@ -14,19 +14,7 @@
       "scope": "attributes",
       "required": true,
       "name": "name",
-      "description": "      The name of the landlord.\n"
-    },
-    {
-      "scope": "attributes",
-      "required": true,
-      "name": "address",
-      "description": "      The address of the landlord.\n"
-    },
-    {
-      "scope": "attributes",
-      "required": true,
-      "name": "telephones",
-      "description": "      The telephone of the landlord.\n"
+      "description": "      The name of the property-type.\n"
     }
   ],
   "response_fields": [
@@ -35,18 +23,18 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/landlords/230?type=landlords",
+      "request_path": "/v1/property-types?type=property-types",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
-        "type": "landlords"
+        "type": "property-types"
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"230\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/230\"},\"attributes\":{\"name\":\"Breitenberg Inc\",\"address\":\"72334 Royal Meadows\",\"telephone\":\"(903) 352-8961 x35057\"}}}",
+      "response_body": "{\"data\":[{\"id\":\"239\",\"type\":\"property-types\",\"links\":{\"self\":\"http://example.org/v1/property-types/239\"},\"attributes\":{\"name\":\"Type 1\"}},{\"id\":\"240\",\"type\":\"property-types\",\"links\":{\"self\":\"http://example.org/v1/property-types/240\"},\"attributes\":{\"name\":\"Type 2\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/property-types?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/property-types?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

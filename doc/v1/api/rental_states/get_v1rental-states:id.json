@@ -5,7 +5,23 @@
   "description": "GET /v1/rental-states/:id",
   "explanation": null,
   "parameters": [
-
+    {
+      "required": true,
+      "name": "type",
+      "description": "      The type of the resource. Must be rental-states.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "name",
+      "description": "      The name of the rental-state.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "display-colour",
+      "description": "      The html display colour that will be used when displaying this state.\n"
+    }
   ],
   "response_fields": [
 
@@ -13,17 +29,18 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rental-states/214",
+      "request_path": "/v1/rental-states/223?type=rental-states",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
+        "type": "rental-states"
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"214\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/214\"},\"attributes\":{\"name\":\"State 3\",\"display-colour\":\"#e00000\"}}}",
+      "response_body": "{\"data\":{\"id\":\"223\",\"type\":\"rental-states\",\"links\":{\"self\":\"http://example.org/v1/rental-states/223\"},\"attributes\":{\"name\":\"State 3\",\"display-colour\":\"#e00000\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
