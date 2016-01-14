@@ -25,3 +25,7 @@ It is to be used for practise purposes as I am moving to API-first design.
 - FactoryGirl for fixtures
 - Faker for more realistic fixture data
 
+#### Deployment
+- CI through CodeShip hook to repo pushes
+- Successfull tests will cause a push to Heroku. https://super-bookstore-api.herokuapp.com
+
