@@ -25,7 +25,7 @@
     {
       "scope": "attributes",
       "required": true,
-      "name": "telephones",
+      "name": "telephone",
       "description": "      The telephone of the landlord.\n"
     }
   ],
@@ -46,7 +46,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"228\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/228\"},\"attributes\":{\"name\":\"Wisozk-Grant\",\"address\":\"4107 Friesen Expressway\",\"telephone\":\"101.952.4970 x87668\"}},{\"id\":\"229\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/229\"},\"attributes\":{\"name\":\"Smith Group\",\"address\":\"798 Erich Fork\",\"telephone\":\"594-901-4213 x2063\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"268\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/268\"},\"attributes\":{\"name\":\"Kutch, Morissette and Lebsack\",\"address\":\"4834 Mann Lodge\",\"telephone\":\"1-918-400-2480\"}},{\"id\":\"269\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/269\"},\"attributes\":{\"name\":\"Hyatt LLC\",\"address\":\"9219 Fern Rapid\",\"telephone\":\"(617) 340-2880 x0830\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

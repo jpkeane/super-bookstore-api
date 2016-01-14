@@ -16,7 +16,7 @@ RSpec.resource 'Landlords' do
     parameter 'address', <<-DESC, scope: :attributes, required: true
       The address of the landlord.
     DESC
-    parameter 'telephones', <<-DESC, scope: :attributes, required: true
+    parameter 'telephone', <<-DESC, scope: :attributes, required: true
       The telephone of the landlord.
     DESC
   end

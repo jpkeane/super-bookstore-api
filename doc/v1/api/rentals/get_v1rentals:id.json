@@ -1,0 +1,75 @@
+{
+  "resource": "Rentals",
+  "http_method": "GET",
+  "route": "/v1/rentals/:id",
+  "description": "GET /v1/rentals/:id",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "      The type of the resource. Must be rentals.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "title",
+      "description": "      The headline title of the rental.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "city",
+      "description": "      The city the rental is in.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "bedrooms",
+      "description": "      The amount of bedrooms the rental has.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "image",
+      "description": "      The image URL for the rental.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "daily-rent",
+      "description": "      The daily pro-rata rent for the rental.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "rent_payment_period",
+      "description": "      How often the rent has to be paid.\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/rentals/188?type=rentals",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+        "type": "rentals"
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"data\":{\"id\":\"188\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/188\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Lake Ravenstad\",\"bedrooms\":2,\"image\":\"http://example.com/mafalda.jpg\",\"daily-rent\":601.0,\"rent-payment-period\":\"pcm\"}}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "resource": "Rentals",
+  "http_method": "GET",
+  "route": "/v1/rentals",
+  "description": "GET /v1/rentals",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "      The type of the resource. Must be rentals.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "title",
+      "description": "      The headline title of the rental.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "city",
+      "description": "      The city the rental is in.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "bedrooms",
+      "description": "      The amount of bedrooms the rental has.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "image",
+      "description": "      The image URL for the rental.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "daily-rent",
+      "description": "      The daily pro-rata rent for the rental.\n"
+    },
+    {
+      "scope": "attributes",
+      "required": true,
+      "name": "rent_payment_period",
+      "description": "      How often the rent has to be paid.\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/rentals?type=rentals",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+        "type": "rentals"
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"data\":[{\"id\":\"189\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/189\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"East Dominiqueport\",\"bedrooms\":4,\"image\":\"http://example.com/luisa.jast.jpg\",\"daily-rent\":638.0,\"rent-payment-period\":\"pcm\"}},{\"id\":\"190\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/190\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Labadiehaven\",\"bedrooms\":5,\"image\":\"http://example.com/berry.jpg\",\"daily-rent\":531.0,\"rent-payment-period\":\"pcm\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}

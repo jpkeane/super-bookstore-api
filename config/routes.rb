@@ -3,5 +3,6 @@ Rails.application.routes.draw do
     jsonapi_resources :landlords
     jsonapi_resources :property_types
     jsonapi_resources :rental_states
+    jsonapi_resources :rentals
   end
 end
