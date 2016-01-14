@@ -35,7 +35,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/landlords/270?type=landlords",
+      "request_path": "/v1/landlords/271?type=landlords",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -46,7 +46,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"270\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/270\"},\"attributes\":{\"name\":\"Blick Inc\",\"address\":\"678 Hailey Turnpike\",\"telephone\":\"1-236-403-3265\"}}}",
+      "response_body": "{\"data\":{\"id\":\"271\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/271\"},\"attributes\":{\"name\":\"Bednar, Hoppe and Gibson\",\"address\":\"9468 Gerhold Park\",\"telephone\":\"(338) 951-2309\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

@@ -43,7 +43,7 @@
     {
       "scope": "attributes",
       "required": true,
-      "name": "rent_payment_period",
+      "name": "rent-payment-period",
       "description": "      How often the rent has to be paid.\n"
     }
   ],
@@ -64,7 +64,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"189\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/189\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"East Dominiqueport\",\"bedrooms\":4,\"image\":\"http://example.com/luisa.jast.jpg\",\"daily-rent\":638.0,\"rent-payment-period\":\"pcm\"}},{\"id\":\"190\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/190\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Labadiehaven\",\"bedrooms\":5,\"image\":\"http://example.com/berry.jpg\",\"daily-rent\":531.0,\"rent-payment-period\":\"pcm\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"192\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/192\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"East Emiliofurt\",\"bedrooms\":3,\"image\":\"http://example.com/reilly.jpg\",\"daily-rent\":677.0,\"rent-payment-period\":\"pcm\"}},{\"id\":\"193\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/193\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Port Anne\",\"bedrooms\":5,\"image\":\"http://example.com/shawn.jpg\",\"daily-rent\":793.0,\"rent-payment-period\":\"pcm\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/rentals?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

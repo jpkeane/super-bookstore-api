@@ -43,7 +43,7 @@
     {
       "scope": "attributes",
       "required": true,
-      "name": "rent_payment_period",
+      "name": "rent-payment-period",
       "description": "      How often the rent has to be paid.\n"
     }
   ],
@@ -53,7 +53,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rentals/188?type=rentals",
+      "request_path": "/v1/rentals/191?type=rentals",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -64,7 +64,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"188\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/188\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Lake Ravenstad\",\"bedrooms\":2,\"image\":\"http://example.com/mafalda.jpg\",\"daily-rent\":601.0,\"rent-payment-period\":\"pcm\"}}}",
+      "response_body": "{\"data\":{\"id\":\"191\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/191\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Port Madalynside\",\"bedrooms\":1,\"image\":\"http://example.com/godfrey.prohaska.jpg\",\"daily-rent\":643.0,\"rent-payment-period\":\"pcm\"}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

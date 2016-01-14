@@ -46,7 +46,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"268\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/268\"},\"attributes\":{\"name\":\"Kutch, Morissette and Lebsack\",\"address\":\"4834 Mann Lodge\",\"telephone\":\"1-918-400-2480\"}},{\"id\":\"269\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/269\"},\"attributes\":{\"name\":\"Hyatt LLC\",\"address\":\"9219 Fern Rapid\",\"telephone\":\"(617) 340-2880 x0830\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"272\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/272\"},\"attributes\":{\"name\":\"Metz, Roberts and Walker\",\"address\":\"28572 Pinkie Road\",\"telephone\":\"1-727-514-6674\"}},{\"id\":\"273\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/273\"},\"attributes\":{\"name\":\"Monahan, Smitham and Kozey\",\"address\":\"1092 Makenzie Coves\",\"telephone\":\"635-688-6516 x645\"}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/v1/landlords?page%5Blimit%5D=50\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

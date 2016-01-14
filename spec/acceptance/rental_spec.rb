@@ -25,7 +25,7 @@ RSpec.resource 'Rentals' do
     parameter 'daily-rent', <<-DESC, scope: :attributes, required: true
       The daily pro-rata rent for the rental.
     DESC
-    parameter 'rent_payment_period', <<-DESC, scope: :attributes, required: true
+    parameter 'rent-payment-period', <<-DESC, scope: :attributes, required: true
       How often the rent has to be paid.
     DESC
   end
