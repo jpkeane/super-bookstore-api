@@ -1,6 +1,6 @@
 require 'rspec_api_documentation_helper'
 
-RSpec.resource 'Property-Types' do
+RSpec.resource 'Property Types' do
   header 'Content-Type', 'application/vnd.api+json'
 
   shared_context 'property-type parameters' do
