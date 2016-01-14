@@ -1,25 +1,6 @@
 {
   "resources": [
     {
-      "name": "Rental States",
-      "examples": [
-        {
-          "description": "GET /v1/rental-states/:id",
-          "link": "rental_states/get_v1rental-states:id.json",
-          "groups": "all",
-          "route": "/v1/rental-states/:id",
-          "method": "get"
-        },
-        {
-          "description": "GET /v1/rental-states",
-          "link": "rental_states/get_v1rental-states.json",
-          "groups": "all",
-          "route": "/v1/rental-states",
-          "method": "get"
-        }
-      ]
-    },
-    {
       "name": "Landlords",
       "examples": [
         {
@@ -39,25 +20,6 @@
       ]
     },
     {
-      "name": "Property Types",
-      "examples": [
-        {
-          "description": "GET /v1/property-types",
-          "link": "property_types/get_v1property-types.json",
-          "groups": "all",
-          "route": "/v1/property-types",
-          "method": "get"
-        },
-        {
-          "description": "GET /v1/property-types/:id",
-          "link": "property_types/get_v1property-types:id.json",
-          "groups": "all",
-          "route": "/v1/property-types/:id",
-          "method": "get"
-        }
-      ]
-    },
-    {
       "name": "Rentals",
       "examples": [
         {
@@ -72,6 +34,44 @@
           "link": "rentals/get_v1rentals.json",
           "groups": "all",
           "route": "/v1/rentals",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Rental States",
+      "examples": [
+        {
+          "description": "GET /v1/rental-states/:id",
+          "link": "rental_states/get_v1rental-states:id.json",
+          "groups": "all",
+          "route": "/v1/rental-states/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/rental-states",
+          "link": "rental_states/get_v1rental-states.json",
+          "groups": "all",
+          "route": "/v1/rental-states",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Property Types",
+      "examples": [
+        {
+          "description": "GET /v1/property-types/:id",
+          "link": "property_types/get_v1property-types:id.json",
+          "groups": "all",
+          "route": "/v1/property-types/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/property-types",
+          "link": "property_types/get_v1property-types.json",
+          "groups": "all",
+          "route": "/v1/property-types",
           "method": "get"
         }
       ]

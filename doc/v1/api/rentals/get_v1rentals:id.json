@@ -70,7 +70,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/rentals/320?type=rentals",
+      "request_path": "/v1/rentals/463?type=rentals",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -81,7 +81,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"320\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/320\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"North Dianna\",\"bedrooms\":2,\"image\":\"http://example.com/annabelle_koelpin.jpg\",\"daily-rent\":537.0,\"rent-payment-period\":\"pcm\"},\"relationships\":{\"rental-state\":{\"links\":{\"self\":\"http://example.org/v1/rentals/320/relationships/rental-state\",\"related\":\"http://example.org/v1/rentals/320/rental-state\"}},\"property-type\":{\"links\":{\"self\":\"http://example.org/v1/rentals/320/relationships/property-type\",\"related\":\"http://example.org/v1/rentals/320/property-type\"}},\"landlord\":{\"links\":{\"self\":\"http://example.org/v1/rentals/320/relationships/landlord\",\"related\":\"http://example.org/v1/rentals/320/landlord\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"463\",\"type\":\"rentals\",\"links\":{\"self\":\"http://example.org/v1/rentals/463\"},\"attributes\":{\"title\":\"New rental\",\"city\":\"Beerport\",\"bedrooms\":3,\"image\":\"http://example.com/terrill.jpg\",\"daily-rent\":798.0,\"rent-payment-period\":\"pcm\"},\"relationships\":{\"rental-state\":{\"links\":{\"self\":\"http://example.org/v1/rentals/463/relationships/rental-state\",\"related\":\"http://example.org/v1/rentals/463/rental-state\"}},\"property-type\":{\"links\":{\"self\":\"http://example.org/v1/rentals/463/relationships/property-type\",\"related\":\"http://example.org/v1/rentals/463/property-type\"}},\"landlord\":{\"links\":{\"self\":\"http://example.org/v1/rentals/463/relationships/landlord\",\"related\":\"http://example.org/v1/rentals/463/landlord\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

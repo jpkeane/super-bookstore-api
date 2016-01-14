@@ -35,7 +35,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/v1/landlords/441?type=landlords",
+      "request_path": "/v1/landlords/622?type=landlords",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -46,7 +46,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"441\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/441\"},\"attributes\":{\"name\":\"Sipes Inc\",\"address\":\"439 Miller Court\",\"telephone\":\"(669) 846-3615 x786\"}}}",
+      "response_body": "{\"data\":{\"id\":\"622\",\"type\":\"landlords\",\"links\":{\"self\":\"http://example.org/v1/landlords/622\"},\"attributes\":{\"name\":\"Stehr-Breitenberg\",\"address\":\"995 Lorenz Extensions\",\"telephone\":\"(352) 763-1850\"},\"relationships\":{\"rentals\":{\"links\":{\"self\":\"http://example.org/v1/landlords/622/relationships/rentals\",\"related\":\"http://example.org/v1/landlords/622/rentals\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
