@@ -1,53 +1,42 @@
-JSONAPI.configure do |config|
-  #:underscored_key, :camelized_key, :dasherized_key, or custom
-  config.json_key_format = :dasherized_key
+Apitome.setup do |config|
+  # This determines where the Apitome routes will be mounted. Changing this to '/api/documentation' for instance would
+  # allow you to browse to http://localhost:3000/api/documentation to see your api documentation. Set to nil and mount
+  # it yourself if you need to.
+  config.mount_at = "/v1/api/docs"
 
-  #:underscored_route, :camelized_route, :dasherized_route, or custom
-  config.route_format = :dasherized_route
+  # This defaults to Rails.root if left nil. If you're providing documentation for an engine using a dummy application
+  # it can be useful to set this to your engines root.. E.g. Application::Engine.root
+  config.root = nil
 
-  #:basic, :active_record, or custom
-  config.operations_processor = :active_record
+  # This is where rspec_api_documentation outputs the JSON files. This is configurable within RAD, and so is
+  # configurable here.
+  config.doc_path = "doc/v1/api"
 
-  #:integer, :uuid, :string, or custom (provide a proc)
-  config.resource_key_type = :integer
+  # The title of the documentation -- If your project has a name, you'll want to put it here.
+  config.title = "Charity Auction Server API Documentation"
 
-  # optional request features
-  config.allow_include = true
-  config.allow_sort = true
-  config.allow_filter = true
+  # The main layout view for all documentation pages. By default this is pretty basic, but you may want to use your own
+  # application layout.
+  config.layout = "apitome/application"
 
-  # How to handle unsupported attributes and relationships which are provided in the request
-  # true => raises an error
-  # false => allows the request to continue. A warning is included in the response meta data indicating
-  # the fields which were ignored. This is useful for client libraries which send extra parameters.
-  config.raise_if_parameters_not_allowed = true
+  # We're using highlight.js (https://github.com/isagalaev/highlight.js) for code highlighting, and it comes with some
+  # great themes. You can check http://softwaremaniacs.org/media/soft/highlight/test.html for themes, and enter the
+  # theme as lowercase/underscore.
+  config.code_theme = "default"
 
-  # :none, :offset, :paged, or a custom paginator name
-  config.default_paginator = :offset
+  # This allows you to override the css manually. You typically want to require `apitome/application` within the
+  # override, but if you want to override it entirely you can do so.
+  config.css_override = nil
 
-  # Output pagination links at top level
-  config.top_level_links_include_pagination = true
+  # This allows you to override the javascript manually. You typically want to require `apitome/application` within the
+  # override, but if you want to override it entirely you can do so.
+  config.js_override = nil
 
-  config.default_page_size = 50
-  config.maximum_page_size = 200
+  # You can provide a 'README' style markdown file for the documentation, which is a useful place to include general
+  # information. This path is relative to your doc_path configuration.
+  config.readme = "../api.md"
 
-  # Output the record count in top level meta data for find operations
-  config.top_level_meta_include_record_count = true
-  config.top_level_meta_record_count_key = :record_count
-
-  config.use_text_errors = false
-
-  # List of classes that should not be rescued by the operations processor.
-  # For example, if you use Pundit for authorization, you might
-  # raise a Pundit::NotAuthorizedError at some point during operations
-  # processing. If you want to use Rails' `rescue_from` macro to
-  # catch this error and render a 403 status code, you should add
-  # the `Pundit::NotAuthorizedError` to the `exception_class_whitelist`.
-  # Subclasses of the whitelisted classes will also be whitelisted.
-  config.exception_class_whitelist = []
-
-  # Resource Linkage
-  # Controls the serialization of resource linkage for non compound documents
-  # NOTE: always_include_to_many_linkage_data is not currently implemented
-  config.always_include_to_one_linkage_data = false
+  # Apitome can render the documentation into a single page that uses scrollspy, or it can render the documentation on
+  # individual pages on demand. This allows you to specify which one you want, as a single page may impact performance.
+  config.single_page = true
 end

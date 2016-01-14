@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "name": "Landlords",
+      "examples": [
+        {
+          "description": "GET /v1/landlords/:id",
+          "link": "landlords/get_v1landlords:id.json",
+          "groups": "all",
+          "route": "/v1/landlords/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/landlords",
+          "link": "landlords/get_v1landlords.json",
+          "groups": "all",
+          "route": "/v1/landlords",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}
