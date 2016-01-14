@@ -1,6 +1,25 @@
 {
   "resources": [
     {
+      "name": "Property-Types",
+      "examples": [
+        {
+          "description": "GET /v1/property-types/:id",
+          "link": "property-types/get_v1property-types:id.json",
+          "groups": "all",
+          "route": "/v1/property-types/:id",
+          "method": "get"
+        },
+        {
+          "description": "GET /v1/property-types",
+          "link": "property-types/get_v1property-types.json",
+          "groups": "all",
+          "route": "/v1/property-types",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Landlords",
       "examples": [
         {
