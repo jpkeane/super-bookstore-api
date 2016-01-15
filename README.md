@@ -1,5 +1,6 @@
 ## README
 [![Coverage Status](https://coveralls.io/repos/jpkeane/super-rentals-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/jpkeane/super-rentals-api?branch=master)
+[![Build Status](https://codeship.com/projects/e1327510-9cd7-0133-9aee-22509ada1533/status?branch=master)](https://codeship.com/projects/127273)
 
 This API is designed to provide a remote backing store to the official EmberJS tutorial application.
 
