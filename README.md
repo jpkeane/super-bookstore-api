@@ -27,5 +27,5 @@ It is to be used for practise purposes as I am moving to API-first design.
 
 #### Deployment
 - CI through CodeShip hook to repo pushes
-- Successfull tests will cause a push to Heroku. https://super-rentals-api.herokuapp.com
+- Successful tests will cause a push to Heroku. https://super-rentals-api.herokuapp.com
 
