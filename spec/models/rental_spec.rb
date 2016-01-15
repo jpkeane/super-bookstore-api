@@ -45,21 +45,21 @@ RSpec.describe Rental, type: :model do
     end
 
     it 'has #rent_as_pcm' do
-      expect(@pcm_rental.rent_as_pcm).to eq 609
+      expect(@pcm_rental.rent_as_pcm).to eq 608
     end
 
     it 'has #rent_as_weekly' do
-      expect(@weekly_rental.rent_as_weekly).to eq 141
+      expect(@weekly_rental.rent_as_weekly).to eq 140
     end
 
     it 'has #rent_as_quadweekly' do
-      expect(@quadweekly_rental.rent_as_quadweekly).to eq 562
+      expect(@quadweekly_rental.rent_as_quadweekly).to eq 560
     end
 
     it 'has #rent_as_default_payment' do
-      expect(@pcm_rental.rent_as_default_payment).to eq 609
-      expect(@weekly_rental.rent_as_default_payment).to eq 141
-      expect(@quadweekly_rental.rent_as_default_payment).to eq 562
+      expect(@pcm_rental.rent_as_default_payment).to eq 608
+      expect(@weekly_rental.rent_as_default_payment).to eq 140
+      expect(@quadweekly_rental.rent_as_default_payment).to eq 560
       expect(@daily_rental.rent_as_default_payment).to eq 20
     end
   end

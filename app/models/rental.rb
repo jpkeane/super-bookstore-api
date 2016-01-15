@@ -14,15 +14,15 @@ class Rental < ActiveRecord::Base
   validates :rent_payment_period, presence: true
 
   def rent_as_pcm
-    ((daily_rent * 365) / 12).ceil
+    ((daily_rent * 365) / 12).round
   end
 
   def rent_as_weekly
-    ((daily_rent * 365) / 52).ceil
+    (daily_rent * 7).round
   end
 
   def rent_as_quadweekly
-    (((daily_rent * 365) / 52) * 4).ceil
+    (daily_rent * 28).round
   end
 
   def rent_as_default_payment
