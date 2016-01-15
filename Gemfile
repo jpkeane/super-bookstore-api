@@ -10,6 +10,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jsonapi-resources'
 gem 'apitome'
 
+gem 'rack-cors'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
@@ -25,6 +27,7 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 3.0'
+  gem 'coveralls', require: false
 end
 
 group :production do
