@@ -1,3 +1,6 @@
+# ApplicationController - Top level controller for Rails application.
+#
+# Uses JSONAPI::ResourceController to add API based methods as default
 class ApplicationController < JSONAPI::ResourceController
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.

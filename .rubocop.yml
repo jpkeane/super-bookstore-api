@@ -1,6 +1,12 @@
 Rails:
   Enabled: true
 
+Metrics/LineLength:
+  Max: 120
+
+Style/Alias:
+  Enabled: false
+
 AllCops:
   Include:
     - '**/Rakefile'
@@ -8,4 +14,5 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'script/**/*'
+    - 'bin/**/*'
     - !ruby/regexp /old_and_unused\.rb$/

@@ -1,3 +1,4 @@
+# Landlord Model - Active Record model for the Landlords
 class Landlord < ActiveRecord::Base
   has_many :rentals
 

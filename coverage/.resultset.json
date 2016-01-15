@@ -27,6 +27,7 @@
         1,
         null,
         1,
+        null,
         1,
         null,
         null,
@@ -283,6 +284,7 @@
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/resources/v1/landlord_resource.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -300,6 +302,7 @@
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/resources/v1/base_resource.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -314,10 +317,10 @@
         28,
         null,
         null,
-        null,
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/models/landlord.rb": [
+        null,
         1,
         1,
         null,
@@ -328,6 +331,7 @@
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/resources/v1/rental_resource.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -338,6 +342,7 @@
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/models/rental.rb": [
+        null,
         1,
         1,
         1,
@@ -365,11 +370,11 @@
         null,
         null,
         1,
-        2,
+        4,
         null,
-        0,
+        1,
         null,
-        0,
+        1,
         null,
         1,
         null,
@@ -380,6 +385,7 @@
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/resources/v1/property_type_resource.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -396,6 +402,7 @@
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/models/property_type.rb": [
+        null,
         1,
         1,
         null,
@@ -404,6 +411,7 @@
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/resources/v1/rental_state_resource.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -420,6 +428,7 @@
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/models/rental_state.rb": [
+        null,
         1,
         1,
         null,
@@ -428,39 +437,26 @@
         null,
         1,
         31,
-        28,
+        null,
         28,
         1,
         null,
-        null,
-        null
-      ],
-      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/helpers/landlord_helper.rb": [
-        1,
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/landlords_controller.rb": [
         1,
         1,
         null,
-        null,
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/application_controller.rb": [
+        null,
+        null,
+        null,
         1,
         null,
         null,
         1,
-        null
-      ],
-      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/property_types_controller.rb": [
-        1,
-        1,
-        null,
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/rentals_controller.rb": [
@@ -474,8 +470,14 @@
         1,
         null,
         null
+      ],
+      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/property_types_controller.rb": [
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1452866316
+    "timestamp": 1452869628
   }
 }

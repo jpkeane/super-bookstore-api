@@ -1,4 +1,5 @@
 module V1
+  # LandlordResource - JSONAPI Resource for Landlord
   class LandlordResource < BaseResource
     attributes :name, :address, :telephone
 

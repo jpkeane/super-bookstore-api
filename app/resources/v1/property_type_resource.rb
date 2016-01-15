@@ -1,4 +1,5 @@
 module V1
+  # PropertyTypeResource - JSONAPI Resource for PropertyType
   class PropertyTypeResource < BaseResource
     attributes :name
 

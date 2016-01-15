@@ -1,4 +1,5 @@
 module V1
+  # BaseResource - Base JSONAPI Resource for inheritance
   class BaseResource < JSONAPI::Resource
     abstract
 
@@ -12,6 +13,5 @@ module V1
     def fetchable_fields
       super + [:created_at, :updated_at]
     end
-
   end
 end

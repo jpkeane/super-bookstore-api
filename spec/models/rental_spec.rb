@@ -31,12 +31,8 @@ RSpec.describe Rental, type: :model do
     end
 
     it 'has the fulfillment_type enum definition' do
-      expect(described_class.rent_payment_periods).to eq({
-          'pcm' => 0,
-          'weekly' => 1,
-          'quadweekly' => 2,
-          'daily' => 3,
-      })
+      expected_enum_hash = { 'pcm' => 0, 'weekly' => 1, 'quadweekly' => 2, 'daily' => 3 }
+      expect(described_class.rent_payment_periods).to eq(expected_enum_hash)
     end
   end
 
@@ -49,22 +45,22 @@ RSpec.describe Rental, type: :model do
     end
 
     it 'has #rent_as_pcm' do
-      expect(@pcm_rental.rent_as_pcm).to eq (609)
+      expect(@pcm_rental.rent_as_pcm).to eq 609
     end
 
     it 'has #rent_as_weekly' do
-      expect(@weekly_rental.rent_as_weekly).to eq (141)
+      expect(@weekly_rental.rent_as_weekly).to eq 141
     end
 
     it 'has #rent_as_quadweekly' do
-      expect(@quadweekly_rental.rent_as_quadweekly).to eq (562)
+      expect(@quadweekly_rental.rent_as_quadweekly).to eq 562
     end
 
     it 'has #rent_as_default_payment' do
-      expect(@pcm_rental.rent_as_default_payment).to eq (609)
-      expect(@weekly_rental.rent_as_default_payment).to eq (141)
-      expect(@quadweekly_rental.rent_as_default_payment).to eq (562)
-      expect(@daily_rental.rent_as_default_payment).to eq (20)
+      expect(@pcm_rental.rent_as_default_payment).to eq 609
+      expect(@weekly_rental.rent_as_default_payment).to eq 141
+      expect(@quadweekly_rental.rent_as_default_payment).to eq 562
+      expect(@daily_rental.rent_as_default_payment).to eq 20
     end
   end
 

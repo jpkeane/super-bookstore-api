@@ -22,5 +22,4 @@ RSpec.describe RentalState, type: :model do
       expect(invalid_rental_state).to be_valid
     end
   end
-
 end

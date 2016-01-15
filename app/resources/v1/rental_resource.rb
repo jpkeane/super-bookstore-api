@@ -1,4 +1,5 @@
 module V1
+  # RentalResource - JSONAPI Resource for Rental
   class RentalResource < BaseResource
     attributes :title, :city, :bedrooms, :image, :daily_rent, :rent_payment_period
 
