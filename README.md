@@ -1,4 +1,5 @@
 ## README
+[![Coverage Status](https://coveralls.io/repos/jpkeane/super-rentals-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/jpkeane/super-rentals-api?branch=master)
 
 This API is designed to provide a remote backing store to the official EmberJS tutorial application.
 
@@ -27,5 +28,6 @@ It is to be used for practise purposes as I am moving to API-first design.
 
 #### Deployment
 - CI through CodeShip hook to repo pushes
+- CodeShip will push code coverage to Coveralls. https://coveralls.io/github/jpkeane/super-rentals-api
 - Successful tests will cause a push to Heroku. https://super-rentals-api.herokuapp.com
 
