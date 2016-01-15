@@ -32,3 +32,6 @@ It is to be used for practise purposes as I am moving to API-first design.
 - CodeShip will push code coverage to Coveralls. https://coveralls.io/github/jpkeane/super-rentals-api
 - Successful tests will cause a push to Heroku. https://super-rentals-api.herokuapp.com
 
+#### Security
+- Allows the web app at http://super-rentals-client.herokuapp.com for CORS for Rack
+
