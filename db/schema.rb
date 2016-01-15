@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109204450) do
+ActiveRecord::Schema.define(version: 20160115183429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,10 +31,9 @@ ActiveRecord::Schema.define(version: 20160109204450) do
   end
 
   create_table "rental_states", force: :cascade do |t|
-    t.string   "name",           null: false
-    t.string   "display_colour"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "rentals", force: :cascade do |t|

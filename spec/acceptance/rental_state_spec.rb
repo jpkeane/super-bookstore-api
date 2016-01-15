@@ -13,9 +13,6 @@ RSpec.resource 'Rental States' do
     parameter 'name', <<-DESC, scope: :attributes, required: true
       The name of the rental-state.
     DESC
-    parameter 'display-colour', <<-DESC, scope: :attributes, required: true
-      The html display colour that will be used when displaying this state.
-    DESC
   end
 
   get '/v1/rental-states' do

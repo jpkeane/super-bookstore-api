@@ -1,7 +1,7 @@
 module V1
   # RentalStateResource - JSONAPI Resource for RentalState
   class RentalStateResource < BaseResource
-    attributes :name, :display_colour
+    attributes :name
 
     has_many :rentals
 

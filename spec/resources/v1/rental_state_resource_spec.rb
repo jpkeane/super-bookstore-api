@@ -1,7 +1,7 @@
 module V1
   RSpec.describe RentalStateResource do
     let :creatable_fields do
-      [:name, :display_colour].sort
+      [:name].sort
     end
 
     subject do

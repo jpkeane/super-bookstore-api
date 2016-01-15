@@ -433,14 +433,6 @@
         1,
         null,
         1,
-        1,
-        null,
-        1,
-        31,
-        null,
-        28,
-        1,
-        null,
         null
       ],
       "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/landlords_controller.rb": [
@@ -459,7 +451,7 @@
         1,
         null
       ],
-      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/rental_states_controller.rb": [
+      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/property_types_controller.rb": [
         1,
         1,
         null,
@@ -471,13 +463,13 @@
         null,
         null
       ],
-      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/property_types_controller.rb": [
+      "/Volumes/USB Extension/Home/Development/Tutorials/ember_official/super-rentals-api/app/controllers/v1/rental_states_controller.rb": [
         1,
         1,
         null,
         null
       ]
     },
-    "timestamp": 1452881432
+    "timestamp": 1452883224
   }
 }
